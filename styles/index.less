@@ -413,10 +413,6 @@ html:not(.no-js) {
       position: absolute;
     }
 
-	  autoplayOptions: {
-       timeout: this.tweak.delay /* time between slides, in milliseconds */
-     },
-	  
     .slide-wrapper,
     .slide { float: left; }
 
@@ -843,15 +839,3 @@ html.squarespace-cameron {
     }
   }
 }
-
-
-getTweaks: function () {
-this.tweak = {
-aspect: this.getTweakValue('slideshow-aspect-ratio'),
-design: this.getTweakValue('design'),
-nav: this.getTweakValue('gallery-controls'),
-transition: this.getTweakValue('slideshow-transition'),
-autoplay: this.getTweakValue('slideshow-autoplay'),
-delay: this.getTweakValue('slideshowDelay')
-};
-},
